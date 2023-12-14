@@ -41,28 +41,28 @@ class _MyAppState extends State<MyApp> {
             elevation: 0,
             backgroundColor: Colors.white,
             centerTitle: true,
-            title: Text(
+            title: const Text(
               "Create Your Account",
               style: TextStyle(color: Colors.black),
             ),
           ),
           body: Container(
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
             color: Colors.white,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
+                const Text(
                   "Set a password",
                   style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Text(
                   "Please create a secure password including the following criteria below",
                   style: TextStyle(
                       fontSize: 16, height: 1.5, color: Colors.grey.shade600),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 TextField(
@@ -143,7 +143,7 @@ class _MyAppState extends State<MyApp> {
                 Row(
                   children: [
                     AnimatedContainer(
-                      duration: Duration(microseconds: 500),
+                      duration: const Duration(microseconds: 500),
                       height: 20,
                       width: 20,
                       decoration: BoxDecoration(
@@ -164,13 +164,13 @@ class _MyAppState extends State<MyApp> {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
-                    Text("Contains at least 8 characters")
+                    const Text("Contains at least 8 characters")
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 40,
                 ),
                 _isPasswordEightCharacters && _hasPasswordOneNumber
@@ -181,13 +181,13 @@ class _MyAppState extends State<MyApp> {
                         color: Colors.black,
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(5)),
-                        child: Text(
+                        child: const Text(
                           "CREATE ACCOUNT",
                           style: TextStyle(
                               color: Colors.white, fontWeight: FontWeight.w900),
                         ),
                       )
-                    : SizedBox()
+                    : const SizedBox()
               ],
             ),
           ),
